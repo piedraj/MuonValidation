@@ -7,7 +7,7 @@ Subscribe to the following CMS HyperNews forums.
     hn-cms-physics-validation@cern.ch
     hn-cms-relval@cern.ch
 
-# 1. Muon Validation
+# 1. Muon Validation documentation
 
 Samples
 
@@ -59,11 +59,12 @@ Here comes the validation part. Get the package from the official repository, an
     git cms-addpkg Validation/RecoMuon
 
     cd Validation/RecoMuon/test
-    cp /afs/cern.ch/user/r/rocio/public/forNicola/muonReleaseSummaryValidation.py .
-    cp /afs/cern.ch/user/r/rocio/public/forNicola/userparams.py .
 
-    cd macro
-    cp /afs/cern.ch/user/r/rocio/public/forNicola/macro/* .
+    git clone https://github.com/piedraj/MuonValidationFiles
+
+    cp MuonValidationFiles/muonReleaseSummaryValidation.py .
+    cp MuonValidationFiles/userparams.py .
+    cp MuonValidationFiles/macro/* macro/.
 
 In principle you are all set. It is time to run the muon validation.
 
