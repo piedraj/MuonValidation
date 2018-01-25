@@ -9,35 +9,32 @@ Subscribe to the following CMS HyperNews forums.
 
 # 1. Muon Validation documentation
 
-Samples
+Here you can find the files produced for validation.
 
     https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/
 
-Results
+Distributions produced in different validations.
 
     https://cmsdoc.cern.ch/cms/Physics/muon/CMSSW/Performance/RecoMuon/Validation/val/
 
-Global Tags
-
-    https://twiki.cern.ch/twiki/bin/view/CMS/AlCaDB#Useful_links
-
-Validation database
+Validation database.
 
     https://cms-pdmv.cern.ch/valdb/
 
-Old validation description
+Old (2013) validation description.
 
     https://twiki.cern.ch/twiki/bin/view/CMS/RecoMuonValidationSuite
 
-Automatic Relmon validations
+Automatic Relmon validations.
 
     http://cms-service-reldqm.web.cern.ch/cms-service-reldqm/cgi-bin/RelMon.py
 
-Code
+Code.
 
     https://github.com/cms-sw/cmssw/tree/master/Validation/RecoMuon
     https://github.com/cms-sw/cmssw/tree/master/Validation/MuonIsolation
     https://github.com/cms-sw/cmssw/tree/master/Validation/MuonIdentification
+
 
 # 2. How to produce the muon validation plots
 
