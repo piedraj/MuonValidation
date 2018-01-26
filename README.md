@@ -57,11 +57,11 @@ Here comes the validation part. Get the package from the official repository, an
 
     cd Validation/RecoMuon/test
 
-    git clone https://github.com/piedraj/MuonValidationFiles
+    git clone https://github.com/piedraj/MuonValidation
 
-    cp MuonValidationFiles/muonReleaseSummaryValidation.py .
-    cp MuonValidationFiles/userparams.py .
-    cp MuonValidationFiles/macro/* macro/.
+    cp MuonValidation/muonReleaseSummaryValidation.py .
+    cp MuonValidation/userparams.py .
+    cp MuonValidation/macro/* macro/.
 
 In principle you are all set. It is time to run the muon validation.
 
@@ -94,3 +94,11 @@ Now you can start doing the real work. You should modify the **userparams.py** f
       FastSim=False,
       Label='realistic_v4_mahiON',
       Version='v1'
+
+# 3. Things to do
+
+* Update the output to a more web friendly format, from pdf pages to png figures.
+* Check which validation distributions should be removed.
+* Improve (if possible) the information available in the titles of the histograms.
+* Check / update the Kolmogorov-Smirnov (KS) test threshold.
+* Check the horizontal and vertical ranges.
