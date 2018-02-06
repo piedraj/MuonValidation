@@ -104,7 +104,7 @@ To make more exhaustive validation studies it is recommended to use DQM RelVal, 
 2. Enter the release (10_0_0) in the **Search** box.
 3. Check the option **Vary By** Any.
 4. Find the target dataset.
-   * /RelValTTbar_13/CMSSW_10_0_0-PUpmx25ns_100X_upgrade2018_realistic_v6-v1/DQMIO (edited)
+   * /RelValTTbar_13/CMSSW_10_0_0-PUpmx25ns_100X_upgrade2018_realistic_v6-v1/DQMIO
 5. Find the reference dataset.
    * /RelValTTbar_13/CMSSW_10_0_0-PU25ns_100X_upgrade2018_realistic_v6_mahiOFF-v1/DQMIO
 6. Click on **10_0_0(1)** in the target dataset.
