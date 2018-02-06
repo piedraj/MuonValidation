@@ -97,22 +97,19 @@ Now you can start doing the real work. You should modify the **userparams.py** f
 
 # 3. How to use DQM RelVal
 
-To make more exhaustive studies of the validations it is recommended to compare additional distributions using DQM RelVal.
+To make more exhaustive validation studies it is recommended to use DQM RelVal, following the steps below.
 
-    https://cmsweb.cern.ch/dqm/relval/
-
-Once there, you should follow these steps.
-
+0. Go to [DQM RelVal](https://cmsweb.cern.ch/dqm/relval/).
 1. Click on **Run #**.
 2. Enter the release (10_0_0) in the **Search** box.
 3. Check the option **Vary By** Any.
 4. Find the target dataset.
-    /RelValTTbar_13/CMSSW_10_0_0-PUpmx25ns_100X_upgrade2018_realistic_v6-v1/DQMIO (edited)
+   * /RelValTTbar_13/CMSSW_10_0_0-PUpmx25ns_100X_upgrade2018_realistic_v6-v1/DQMIO (edited)
 5. Find the reference dataset.
-    /RelValTTbar_13/CMSSW_10_0_0-PU25ns_100X_upgrade2018_realistic_v6_mahiOFF-v1/DQMIO
+   * /RelValTTbar_13/CMSSW_10_0_0-PU25ns_100X_upgrade2018_realistic_v6_mahiOFF-v1/DQMIO
 6. Click on **10_0_0(1)** in the target dataset.
 7. Click on the CMS icon.
-   * Paste the reference dataset in the first **Dataset** box
+   * Paste the reference dataset in the first **Dataset** box.
    * Choose **Show reference:** For all.
    * Choose **Position:** Overlay+ratio.
    * Click again on the CMS icon.
@@ -120,7 +117,7 @@ Once there, you should follow these steps.
 9. Click on **Everything**.
 10. Click on **Muons**.
 
-You are ready to validate!
+And you are ready to validate!
 
 # 4. Things to do
 
