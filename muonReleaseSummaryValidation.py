@@ -107,7 +107,7 @@ def downloadfile(url):
 	print "Skipping " + url
 	print "Please check the name of the file in the repository: "+GetGuiRepository(userparams.NewParams)
         sys.exit('Exiting...');
-	# return False
+        #return False
 
 def GetSamplePath(params, sample):
     return params['Release_c']+'/'+GetTag(params)+'/'+sample
@@ -151,7 +151,7 @@ def getSampleFiles(params, sample):
     sampleOnWeb=userparams.WebRepository+'/'+ localsample
 
     if (os.path.isfile(localsample)==True):
-        print '   + ' + params['Type'] + 'sample file found at: ' +localsample + '. Using that one'
+        print'   + ' + params['Type'] + 'sample file found at: ' +localsample + '. Using that one'
     elif (userparams.NewParams['GetFilesFrom']=='GUI'):
         theGuiSample = sample
         
@@ -195,7 +195,7 @@ def getSampleFiles(params, sample):
                 os.system('cp '+guiFileName +' '+ localpath)
                 os.system('mv '+guiFileName +' '+ localpath)
                 localguiFileName=localpath + '/' + guiFileName
-
+                
     elif (params['GetFilesFrom']=='CASTOR'):
         print '   + Getting new file from castor'
         params['Condition']=params['Condition']+GetFastSimSuffix(params)
@@ -368,14 +368,18 @@ for sample in userparams.samples :
         if (userparams.ValidateISO):
             myrootsubmit(isolcfgFileName)
             if (userparams.NewParams['FastSim']&userparams.RefParams['FastSim']):
-                shutil.move(newpath+'/MuonIsolationV_inc.png',newpath+'/MuonIsolationV_inc_FS.png')
+                #shutil.move(newpath+'/MuonIsolationV_inc.png',newpath+'/MuonIsolationV_inc_FS.png')
+                shutil.move(newpath+'/MuonIsolationV_inc.pdf',newpath+'/MuonIsolationV_inc_FS.pdf')
         if (userparams.ValidateRECO):
             myrootsubmit(recomuoncfgFileName)
             if (userparams.NewParams['FastSim']&userparams.RefParams['FastSim']):
-                if (os.path.isfile(newpath+'/RecoMuonV.png') == True):
-                    os.rename(newpath+'/RecoMuonV.png',newpath+'/RecoMuonV_FS.png')
+                #if (os.path.isfile(newpath+'/RecoMuonV.png') == True):
+                if (os.path.isfile(newpath+'/RecoMuonV.pdf') == True):
+                    #os.rename(newpath+'/RecoMuonV.png',newpath+'/RecoMuonV_FS.png')
+                    os.rename(newpath+'/RecoMuonV.pdf',newpath+'/RecoMuonV_FS.pdf')
                 else:
-                    print('ERROR: Could not find "' + newpath + '/RecoMuonV.png')
+                    #print('ERROR: Could not find "' + newpath + '/RecoMuonV.png')
+                    print('ERROR: Could not find "' + newpath + '/RecoMuonV.pdf')
 
     if(userparams.Publish):
         newpath = GetSamplePath(userparams.NewParams,sample)

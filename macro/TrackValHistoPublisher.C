@@ -252,6 +252,10 @@ void TrackValHistoPublisher(const char* newFile="NEW_FILE",const char* refFile="
     Double_t maxx   [] = {-1E100, -1E100, maxPT, maxPT,  -1E100, -1E100 };
     Double_t miny   [] = {0.5,    -1E100, 0,     -1E100, 0.5,    -1E100 };
     Double_t maxy   [] = {1.0125, -1E100, 1.025, -1E100, 1.0125, -1E100 };
+    Double_t miny1   [] = {0.5,    -0.1, 0,     -0.1, 0.5,    0 };
+    Double_t maxy1   [] = {1.0125, 1.1, 1.1, 1.025, 1.1, 1.025 };
+    Double_t miny2   [] = {0.5,    0, 0.5,     -0.1, 0.5,    -0.01 };
+    Double_t maxy2   [] = {1.0125, 1.025, 1.025, 1.1, 1.1, 0.1 };
 
     //////////////////////////////////////
     /////////// CTF //////////////////////
@@ -272,7 +276,7 @@ void TrackValHistoPublisher(const char* newFile="NEW_FILE",const char* refFile="
                       refLabel, newLabel,
 		      refFileLabel, newFileLabel,
                       plots1, plotsl1,
-                      logy, doKolmo, norm_1,0,minx,maxx,miny,maxy);     
+                      logy, doKolmo, norm_1,0,minx,maxx,miny1,maxy1);     
       
       const char* plots12[] = { "effic_vs_hit", "fakerate_vs_hit","effic_vs_phi","fakerate_vs_phi"};
       const char* plotsl12[] = { "efficiency vs hits", "fakerate vs hits","efficiency vs #phi","fakerate vs #phi"};
@@ -286,7 +290,7 @@ void TrackValHistoPublisher(const char* newFile="NEW_FILE",const char* refFile="
                       refLabel, newLabel,
 		      refFileLabel, newFileLabel,
                       plots12, plotsl12,
-                      logy, doKolmo, norm_2, 0,minx,maxx,miny,maxy);     
+                      logy, doKolmo, norm_2, 0,minx,maxx,miny2,maxy2);     
 
       // ====== hits and pt
       const char* plots2  [] = { "hits_eta", "hits", "num_simul_pT","num_reco_pT"};
