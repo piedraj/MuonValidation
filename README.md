@@ -54,13 +54,12 @@ Once there you need to setup the CMSSW release.
 Get the muon validation package and compile it.
 
     git cms-addpkg Validation/RecoMuon
-    git cms-merge-topic  22267
+    git cms-merge-topic 22267
     scram b -j 8
-
-In principle you are all set. It is time to run the muon validation.
-
     cd Validation/RecoMuon/test
-    # Open new_userparams.py and replace User='giovanni' by User='piedra'
+
+Open **new_userparams.py** and replace `User='giovanni'` by `User='piedra'`. In principle you are all set. It is time to run the muon validation.
+
     export X509_USER_PROXY=/tmp/x509up_u23679
     export X509_CERT_DIR=/etc/grid-security/certificates/
     voms-proxy-init -voms cms
