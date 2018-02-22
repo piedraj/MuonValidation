@@ -9,11 +9,11 @@ Subscribe to the following CMS HyperNews forums.
 
 # 1. Muon Validation documentation
 
-Here you can find the files produced for validation.
+Here you can find all the ROOT files centrally produced for validation.
 
     https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/
 
-Distributions produced in different validations.
+Distributions (in pdf format) produced for different validations.
 
     https://cmsdoc.cern.ch/cms/Physics/muon/CMSSW/Performance/RecoMuon/Validation/val/
 
@@ -25,7 +25,7 @@ Old (2013) validation description.
 
     https://twiki.cern.ch/twiki/bin/view/CMS/RecoMuonValidationSuite
 
-Automatic Relmon validations.
+Automatic RelMon validations.
 
     http://cms-service-reldqm.web.cern.ch/cms-service-reldqm/cgi-bin/RelMon.py
 
