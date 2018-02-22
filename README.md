@@ -1,3 +1,7 @@
+# Known issues
+
+**2018/02/22.** The FastSim fake rates cannot be compared with and without pmx. In the latter there aren't tracking particles, and this implies a much higher fake rate. On the other hand, the efficiencies can be compared.
+
 # 0. Do not go anywhere without this
 
 Subscribe to the following CMS HyperNews forums.
