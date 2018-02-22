@@ -46,34 +46,29 @@ As usual, first login to lxplus and go to your CMSSW releases area.
 
 Once there you need to setup the CMSSW release.
 
-    export SCRAM_ARCH=slc6_amd64_gcc530
-    cmsrel CMSSW_9_3_0_pre1
-    cd CMSSW_9_3_0_pre1/src/
+    export SCRAM_ARCH=slc6_amd64_gcc630
+    cmsrel CMSSW_10_1_0_pre1
+    cd CMSSW_10_1_0_pre1/src/
     cmsenv
 
-Here comes the validation part. Get the package from the official repository, and then copy the modified files from rocio's public area.
+Get the muon validation package and compile it.
 
     git cms-addpkg Validation/RecoMuon
-
-    cd Validation/RecoMuon/test
-
-    git clone https://github.com/piedraj/MuonValidation
-
-    cp MuonValidation/muonReleaseSummaryValidation.py .
-    cp MuonValidation/userparams.py .
-    cp MuonValidation/macro/* macro/.
+    git cms-merge-topic  22267
+    scram b -j 8
 
 In principle you are all set. It is time to run the muon validation.
 
     cd Validation/RecoMuon/test
+    # Open new_userparams.py and replace User='giovanni' by User='piedra'
     export X509_USER_PROXY=/tmp/x509up_u23679
     export X509_CERT_DIR=/etc/grid-security/certificates/
     voms-proxy-init -voms cms
-    python muonReleaseSummaryValidation.py
+    python new_muonReleaseSummary.py
 
-Now you can start doing the real work. You should modify the **userparams.py** file with the information that you will find in [RelMon](https://cms-pdmv.cern.ch/relmon/), at the crossing of the **Muon** and **TTbar** lines.
+Now you can start doing the real work. You should modify the **new_userparams.py** file with the information that you will find in [RelMon](https://cms-pdmv.cern.ch/relmon/), at the crossing of the **Muon** and **TTbar** lines.
 
-    emacs -nw RecoMuon/test/userparams.py
+    emacs -nw RecoMuon/test/new_userparams.py
 
     NewParams
       Type='New',
