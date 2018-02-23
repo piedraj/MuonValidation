@@ -4,12 +4,13 @@
 
 # 1. Do not go anywhere without this
 
-Subscribe to the following CMS HyperNews forums.
+Subscribe to the following CMS HyperNews forums and e-groups.
 
     hn-cms-alca@cern.ch
     hn-cms-muon-object-validation@cern.ch
     hn-cms-physics-validation@cern.ch
     hn-cms-relval@cern.ch
+    cms-PPD-PdmV-val-admin-pdmv@cern.ch
 
 # 2. Muon Validation documentation
 
