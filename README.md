@@ -1,9 +1,9 @@
 # 0. Known issues or features
 
-**2018/02/26.** (FullSim) our default is the MuonAssociatorByHits, which is used for all the plots made by the MuonTrackValidator, and also by the RecoMuonValidator. I introduced in my macro a comparison with the associator used by the TrackingPOG (which can run *only* on inner tracks) just to keep under control the comparison of results obtained with our code and theirs (on inner tracks, selected with pt>4 GeV, called the “probeTracks”). This serves just like a “gauge” to avoid that low level changes in the tracking simulation/validation could go unnoticed by us.
-So only large discrepancies between them should be alarming, not the small differences that you see now on the fake rates (while on the efficiencies you see thay are in perfect agreement).
+**2018/02/26, FullSim.** The MuonAssociatorByHits is used for all the plots made by the MuonTrackValidator and by the RecoMuonValidator. Giovanni has introduced a comparison with the associator used by the TrackingPOG (which can run *only* on inner tracks) to keep under control the comparison of results obtained with our code and theirs (on inner tracks, selected with pt>4 GeV, ). This serves as  to avoid that low level changes in the tracking simulation/validation could go unnoticed by us. Only large discrepancies between them should be alarming, not the small differences that we see on the fake rates (while on the efficiencies they are in perfect agreement).
 
-**2018/02/22.** The FastSim fake rates cannot be compared with and without pmx. In the latter there aren't tracking particles, and this implies a much higher fake rate. On the other hand, the efficiencies can be compared.
+**2018/02/22, FastSim.** The fake rates cannot be compared with and without pmx. In the latter there aren't tracking particles, and this implies a much higher fake rate. On the other hand, the efficiencies can be compared.
+
 
 # 1. Do not go anywhere without this
 
@@ -14,6 +14,7 @@ Subscribe to the following CMS HyperNews forums and e-groups.
     hn-cms-physics-validation@cern.ch
     hn-cms-relval@cern.ch
     cms-PPD-PdmV-val-admin-pdmv@cern.ch
+
 
 # 2. Muon Validation documentation
 
