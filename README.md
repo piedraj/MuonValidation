@@ -66,34 +66,12 @@ Get the muon validation package and compile it.
     scram b -j 8
     cd Validation/RecoMuon/test
 
-Open `new_userparams.py` and replace `User='giovanni'` by `User='piedra'`. Now click on the little green pie at the crossing of the **Muons** row and the **RelValTTbar_13** column in the [RelMon](https://cms-pdmv.cern.ch/relmon/) pie matrix. There you will find the precise names of the target and reference CMSSW releases. Use these release names in [RelVal repository](https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/) to find the target and reference files, for example for **RelValTTbar_13**. At this point you have all the needed information to complete the validation configuration in `new_userparams.py`, with the following syntax,
+Open `new_userparams.py` and replace `User='giovanni'` by `User='piedra'`. Now click on the little green pie at the crossing of the **Muons** row and the **RelValTTbar_13** column in the [RelMon](https://cms-pdmv.cern.ch/relmon/) pie matrix. There you will find the precise names of the target and reference CMSSW releases. Use these release names in [RelVal repository](https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/) to find the target and reference files, for example for **RelValTTbar_13**. At this point you have all the needed information to complete the validation configuration in `new_userparams.py`, following the syntax below.
 
     DQM_V0001_R000000001__RelValTTbar_13__CMSSW_9_4_4-PU25ns_94X_mc2017_realistic_v10For2017G_v2-v1__DQMIO.root
     DQM_V0001_R000000001__{samples}__{Release}-PU{PileUp}_{Condition}-{Version}__{Format}.root
 
-    emacs -nw RecoMuon/test/new_userparams.py
-
-    NewParams
-      Type='New',
-      Release='CMSSW_10_0_0_pre3_GEANT4',
-      Release_c='CMSSW_10_0_0_pre3_GEANT4',  # Name of the output folder
-      Condition='100X_upgrade2018',
-      PileUp='no',
-      FastSim=False,
-      Label='realistic_v4_mahiON',
-      Version='v1'
-
-    RefParams
-      Type='Ref',
-      Release='CMSSW_10_0_0_pre3',
-      Release_c='CMSSW_10_0_0_pre3',  # Name of the output folder
-      Condition='100X_upgrade2018',
-      PileUp='no',
-      FastSim=False,
-      Label='realistic_v4_mahiON',
-      Version='v1'
-      
-You are all set! It is then time to run the muon validation.
+You should be all set. It is time to run the muon validation.
 
     export X509_USER_PROXY=/tmp/x509up_u23679
     export X509_CERT_DIR=/etc/grid-security/certificates/
