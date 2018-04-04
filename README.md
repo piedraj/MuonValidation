@@ -66,14 +66,7 @@ Get the muon validation package and compile it.
     scram b -j 8
     cd Validation/RecoMuon/test
 
-Open **new_userparams.py** and replace `User='giovanni'` by `User='piedra'`. In principle you are all set. It is time to run the muon validation.
-
-    export X509_USER_PROXY=/tmp/x509up_u23679
-    export X509_CERT_DIR=/etc/grid-security/certificates/
-    voms-proxy-init -voms cms
-    python new_muonReleaseSummary.py
-
-Now you can start doing the real work. You should modify the **new_userparams.py** file with the information that you will find in [RelMon](https://cms-pdmv.cern.ch/relmon/), at the crossing of the **Muon** and **TTbar_13** lines.
+Open **new_userparams.py** and replace `User='giovanni'` by `User='piedra'`. To complete the configuration of **new_userparams.py** click on the little green pie at the crossing of the **Muons** row and the **RelValTTbar_13** column in the [RelMon](https://cms-pdmv.cern.ch/relmon/) pie matrix. There you will find the precise names of the target and reference CMSSW releases. Use these release names in [RelVal repository](https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/) to find the target and reference files, for example for **RelValTTbar_13**. At this point you have all the needed information to complete the configuration of **new_userparams.py**.
 
     emacs -nw RecoMuon/test/new_userparams.py
 
@@ -96,6 +89,14 @@ Now you can start doing the real work. You should modify the **new_userparams.py
       FastSim=False,
       Label='realistic_v4_mahiON',
       Version='v1'
+      
+You are all set! It is then time to run the muon validation.
+
+    export X509_USER_PROXY=/tmp/x509up_u23679
+    export X509_CERT_DIR=/etc/grid-security/certificates/
+    voms-proxy-init -voms cms
+    python new_muonReleaseSummary.py
+
 
 # 4. How to use DQM RelVal
 
@@ -120,6 +121,7 @@ To make more exhaustive validation studies it is recommended to use DQM RelVal, 
 10. Click on **Muons**.
 
 And you are ready to validate!
+
 
 # 5. Things to do
 
