@@ -63,7 +63,6 @@ Once there you need to setup the CMSSW release.
 Get the muon validation package and compile it.
 
     git cms-addpkg Validation/RecoMuon
-    git cms-merge-topic 22267
     scram b -j 8
     cd Validation/RecoMuon/test
 
@@ -74,7 +73,7 @@ Open **new_userparams.py** and replace `User='giovanni'` by `User='piedra'`. In 
     voms-proxy-init -voms cms
     python new_muonReleaseSummary.py
 
-Now you can start doing the real work. You should modify the **new_userparams.py** file with the information that you will find in [RelMon](https://cms-pdmv.cern.ch/relmon/), at the crossing of the **Muon** and **TTbar** lines.
+Now you can start doing the real work. You should modify the **new_userparams.py** file with the information that you will find in [RelMon](https://cms-pdmv.cern.ch/relmon/), at the crossing of the **Muon** and **TTbar_13** lines.
 
     emacs -nw RecoMuon/test/new_userparams.py
 
