@@ -80,6 +80,7 @@ You should be all set. It is time to run the muon validation.
     export X509_USER_PROXY=/tmp/x509up_u23679
     export X509_CERT_DIR=/etc/grid-security/certificates/
     voms-proxy-init -voms cms
+    
     python new_muonReleaseSummary.py
 
 
