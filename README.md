@@ -110,7 +110,6 @@ And you are ready to validate!
 
 # 5. Things to do
 
-* Update the output to a more web friendly format, from pdf pages to png figures.
 * Check which validation distributions should be removed.
 * Improve (if possible) the information available in the titles of the histograms.
 * Check / update the Kolmogorov-Smirnov (KS) test threshold.
