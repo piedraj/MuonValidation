@@ -43,6 +43,10 @@ Code.
     https://github.com/cms-sw/cmssw/tree/master/Validation/RecoMuon
     https://github.com/cms-sw/cmssw/tree/master/Validation/MuonIsolation
     https://github.com/cms-sw/cmssw/tree/master/Validation/MuonIdentification
+    
+CMSSW release schedule.
+
+    https://twiki.cern.ch/twiki/bin/view/CMS/ReleaseSchedule
 
 
 # 3. How to produce the muon validation plots
