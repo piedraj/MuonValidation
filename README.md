@@ -5,7 +5,7 @@
 **2018/02/22, FastSim.** The fake rates cannot be compared with and without pmx. In the latter there aren't tracking particles, and this implies a much higher fake rate. On the other hand, the efficiencies can be compared.
 
 
-# 1. Do not go anywhere without this
+# Do not go anywhere without this
 
 Subscribe to the following CMS HyperNews forums and e-groups.
 
@@ -16,7 +16,7 @@ Subscribe to the following CMS HyperNews forums and e-groups.
     cms-PPD-PdmV-val-admin-pdmv@cern.ch
 
 
-# 2. Muon Validation documentation
+# Muon Validation documentation
 
 Here you can find all the ROOT files centrally produced for validation.
 
@@ -49,7 +49,7 @@ CMSSW release schedule.
     https://twiki.cern.ch/twiki/bin/view/CMS/ReleaseSchedule
 
 
-# 3. How to produce the muon validation plots
+# How to produce the muon validation plots
 
 As usual, first login to lxplus and go to your CMSSW releases area.
 
@@ -87,7 +87,7 @@ You should be all set. It is time to run the muon validation.
     python new_muonReleaseSummary.py
 
 
-# 4. How to use DQM RelVal
+# How to use DQM RelVal
 
 To make more exhaustive validation studies it is recommended to use DQM RelVal, following the steps below.
 
@@ -112,7 +112,7 @@ To make more exhaustive validation studies it is recommended to use DQM RelVal, 
 And you are ready to validate!
 
 
-# 5. Things to do
+# Things to do
 
 * Check which validation distributions should be removed.
 * Improve (if possible) the information available in the titles of the histograms.
