@@ -67,6 +67,9 @@ Once there you need to setup the CMSSW release.
 Get the muon validation package and compile it.
 
     git cms-addpkg Validation/RecoMuon
+    pushd Validation
+    git pull official-cmssw master
+    popd
     scram b -j 8
     cd Validation/RecoMuon/test
 
