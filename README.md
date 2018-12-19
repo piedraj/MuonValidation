@@ -2,7 +2,7 @@
 
 **2018/02/26, FullSim.** The MuonAssociatorByHits is used for all the plots made by the MuonTrackValidator and by the RecoMuonValidator. Giovanni has introduced a comparison with the associator used by the TrackingPOG (which can run *only* on inner tracks) to keep under control the comparison of results obtained with our code and theirs (on inner tracks with pt>4 GeV). This serves to avoid that low level changes in the tracking simulation/validation could go unnoticed by us. Only large discrepancies between them should be alarming, not the small differences that we see on the fake rates (while on the efficiencies they are in perfect agreement).
 
-**2018/02/22, FastSim.** The fake rates cannot be compared with and without pmx. In the latter there aren't tracking particles, and this implies a much higher fake rate. On the other hand, the efficiencies can be compared.
+**2018/02/22, FastSim.** The fake rates cannot be compared with and without pmx. There aren't tracking particles with pmx, and this implies a much higher fake rate. On the other hand, the efficiencies can be compared.
 
 
 # Do not go anywhere without this
