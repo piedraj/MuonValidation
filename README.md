@@ -60,8 +60,8 @@ As usual, first login to lxplus and go to your CMSSW releases area.
 Once there you need to setup the CMSSW release.
 
     export SCRAM_ARCH=slc6_amd64_gcc700
-    cmsrel CMSSW_10_2_0
-    cd CMSSW_10_2_0/src/
+    cmsrel CMSSW_10_6_0_pre4
+    cd CMSSW_10_6_0_pre4/src/
     cmsenv
 
 Get the muon validation package and compile it.
