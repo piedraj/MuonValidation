@@ -83,7 +83,7 @@ You should be all set. It is time to run the muon validation.
     
     python new_muonReleaseSummary.py
     
-Once the validations are done you should copy (or move) them to the repository. In the example below the validations correspond to the `CMSSW_10_6_0` release.
+Once the validations are done you should copy (or move) them to the muon validation eos repository. The example below corresponds to the `CMSSW_10_6_0` release.
 
     cp -r CMSSW_10_6_0 /eos/user/c/cmsmupog/www/Validation/.
     cd /eos/user/c/cmsmupog/www/Validation/CMSSW_10_6_0
