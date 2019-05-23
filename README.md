@@ -82,6 +82,13 @@ You should be all set. It is time to run the muon validation.
     voms-proxy-init -voms cms
     
     python new_muonReleaseSummary.py
+    
+Once the validations are done you should copy (or move) them to the repository. In the example below the validations correspond to the =CMSSW_10_6_0= release.
+
+    cp -r CMSSW_10_6_0 /eos/user/c/cmsmupog/www/Validation/.
+    cd /eos/user/c/cmsmupog/www/Validation/CMSSW_10_6_0
+    cp ../index.php .
+    find . -type d -exec cp index.php {} \;
 
 
 # How to use DQM RelVal
