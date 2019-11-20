@@ -89,6 +89,10 @@ Once the validations are done you should copy (or move) them to the muon validat
     cd /eos/user/c/cmsmupog/www/Validation/CMSSW_10_6_0
     cp ../index.php .
     find . -type d -exec cp index.php {} \;
+    
+Now you are left with checking the produced histograms, which will be available at the Muon POG Validation web page.
+
+    https://cms-muonpog.web.cern.ch/cms-muonpog/Validation/
 
 
 # How to use DQM RelVal
