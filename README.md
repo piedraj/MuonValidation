@@ -61,8 +61,8 @@ As usual, first login to lxplus and go to your CMSSW releases area.
 
 Once there you need to setup the CMSSW release.
 
-    cmsrel CMSSW_11_1_0_pre12
-    cd CMSSW_11_1_0_pre12/src/
+    cmsrel CMSSW_11_1_0_pre2
+    cd CMSSW_11_1_0_pre2/src/
     cmsenv
 
 Get the muon validation package and compile it.
