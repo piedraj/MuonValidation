@@ -1,5 +1,24 @@
 # Known issues or features
 
+**2020/03/12, Muon validation changes from CMSSW_11_1_0_pre2.** The following distributions have been introduced in the Muon validation from the CMSSW_11_1_0_pre2 release:
+
+    displacedGlobalMuons
+    displacedStandAloneMuons
+    displacedTrks
+    pfMuonTrks
+    recoMuonTrks
+    tunepMuonTrks
+
+In a similar fashion, the following distributions have bee removed from the Muon validation from the CMSSW_11_1_0_pre2 release:
+
+    probeTrks_MABH_vs_TABH  
+    DQMData           
+    PDF                
+    RecoMuonV             
+    seedsOfSTAMuons
+    standAloneMuons
+    probeTrks_TkAsso
+
 **2019/12/20, CMS Phase2 geometries.** This `CMSSW_11_1_X` [README](https://github.com/cms-sw/cmssw/blob/CMSSW_11_1_X/Configuration/Geometry/README.md) contains short descriptions of the different CMS Phase2 geometries.
 
 **2018/02/26, FullSim.** The MuonAssociatorByHits (MABH) is used for all the plots made by the MuonTrackValidator and by the RecoMuonValidator. Giovanni Abbiendi introduced a comparison with the associator used by the TrackingPOG (TABH) (which can run *only* on inner tracks) to keep under control the comparison of results obtained with our code and theirs (on inner tracks with pt>4 GeV). This serves to avoid that low level changes in the tracking simulation/validation could go unnoticed by us. Only large discrepancies between them should be alarming, not the small differences that we see on the fake rates (while on the efficiencies they are in perfect agreement).
