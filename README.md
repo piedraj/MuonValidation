@@ -122,6 +122,7 @@ To manually download a file you only need to know the URL or web address.
 For example.
 
     /usr/bin/curl -k -O -L --capath $X509_CERT_DIR --key $X509_USER_PROXY --cert $X509_USER_PROXY -w "%{http_code}" https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/CMSSW_11_0_x/DQM_V0001_R000000001__RelValZMM_14__CMSSW_11_0_0-PU25ns_110X_mcRun4_realistic_v3_2026D49PU200-v1__DQMIO.root
+    /usr/bin/curl -k -O -L --capath $X509_CERT_DIR --key $X509_USER_PROXY --cert $X509_USER_PROXY -w "%{http_code}" https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/CMSSW_11_1_x/DQM_V0001_R000000001__RelValZMM_14__CMSSW_11_1_1-PU25ns_110X_mcRun4_realistic_v3_2026D49PU200_raw1100-v1__DQMIO.root
 
 
 # How to use DQM RelVal
