@@ -103,6 +103,14 @@ You should be all set. It is time to run the muon validation.
     
     python new_muonReleaseSummary.py
     
+If you need to manually download a file.
+
+    /usr/bin/curl -k -O -L --capath $X509_CERT_DIR --key $X509_USER_PROXY --cert $X509_USER_PROXY -w "%{http_code}" + url
+    
+For example.
+
+    /usr/bin/curl -k -O -L --capath $X509_CERT_DIR --key $X509_USER_PROXY --cert $X509_USER_PROXY -w "%{http_code}" https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/CMSSW_11_0_x/DQM_V0001_R000000001__RelValZMM_14__CMSSW_11_0_0-PU25ns_110X_mcRun4_realistic_v3_2026D49PU200-v1__DQMIO.root
+    
 Once the validations are done you should copy (or move) them to the muon validation eos repository. The example below corresponds to the `CMSSW_10_6_0` release.
 
     cp -r CMSSW_10_6_0 /eos/user/c/cmsmupog/www/Validation/.
