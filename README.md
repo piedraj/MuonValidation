@@ -96,10 +96,10 @@ Open `new_userparams.py` and replace `User='cprieels'` by `User='piedra'`. Now c
     DQM_V0001_R000000001__{samples}__{Release}-PU{PileUp}_{Condition}-{Version}__{Format}.root
 
 You should be all set. It is time to run the muon validation.
-
-    export X509_USER_PROXY=/tmp/x509up_u23679
+    
     export X509_CERT_DIR=/etc/grid-security/certificates/
     voms-proxy-init -voms cms
+    export X509_USER_PROXY=$(voms-proxy-info -p)
     
     python new_muonReleaseSummary.py
         
