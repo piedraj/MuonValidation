@@ -43,7 +43,7 @@ Here you can find all the ROOT files centrally produced for validation.
 
     https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/
 
-Distributions (in pdf format) produced for different validations.
+Distributions (discontinued after CMSSW_10_3_0_pre3) produced for different validations.
 
     https://cmsdoc.cern.ch/cms/Physics/muon/CMSSW/Performance/RecoMuon/Validation/val/
 
