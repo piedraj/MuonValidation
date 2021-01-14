@@ -57,7 +57,7 @@ Old (2013) validation description.
 
 Automatic RelMon validations.
 
-    http://cms-service-reldqm.web.cern.ch/cms-service-reldqm/cgi-bin/RelMon.py
+    https://cms-pdmv.cern.ch/relmon/
 
 Code.
 
