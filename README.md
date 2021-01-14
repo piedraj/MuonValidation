@@ -148,10 +148,3 @@ To make more exhaustive validation studies it is recommended to use DQM RelVal, 
 10. Click on **Muons**.
 
 And you are ready to validate!
-
-
-# Things to do
-
-* Check which validation distributions should be removed.
-* Improve (if possible) the information available in the titles of the histograms.
-* Check / update the Kolmogorov-Smirnov (KS) test threshold.
