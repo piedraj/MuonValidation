@@ -1,6 +1,6 @@
 # Known issues or features
 
-**2020/03/12, Muon validation changes from CMSSW_11_1_0_pre2.** The following distributions have been introduced in the Muon validation from the CMSSW_11_1_0_pre2 release:
+**2020/03/12, Muon validation changes from CMSSW_11_1_0_pre2.** The following distributions were introduced in the Muon validation from the CMSSW_11_1_0_pre2 release:
 
     displacedGlobalMuons
     displacedStandAloneMuons
@@ -9,7 +9,7 @@
     recoMuonTrks
     tunepMuonTrks
 
-In a similar fashion, the following distributions have bee removed from the Muon validation from the CMSSW_11_1_0_pre2 release:
+In a similar fashion, the following distributions were removed from the Muon validation from the CMSSW_11_1_0_pre2 release:
 
     probeTrks_MABH_vs_TABH  
     DQMData           
