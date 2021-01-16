@@ -84,7 +84,13 @@ Once there you need to setup the CMSSW release.
     cd CMSSW_11_1_0_pre2/src/
     cmsenv
 
-Get the muon validation package and compile it.
+If you have never used Git then you will have to follow the [First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) instructions. The following commands are the bare minimum set-up needed.
+
+    git config --global user.name "John Doe"
+    git config --global user.email johndoe@example.com
+    git config --global user.github <your github username>
+
+Get the muon validation package and compile it. 
 
     git cms-addpkg Validation/RecoMuon
     scram b -j 8
