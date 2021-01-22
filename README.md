@@ -35,6 +35,10 @@ Subscribe to the following CMS HyperNews forums and e-groups.
     hn-cms-physics-validation@cern.ch
     hn-cms-relval@cern.ch
     cms-PPD-PdmV-val-admin-pdmv@cern.ch
+    
+# Never travel without a Grid certificate
+
+To get connected to the CMS VOMS server you need to setup a Grid certificate at your lxplus `/home/.globus` area. All the necessary information to get a new Grid User certificate, copy it to lxplus and import it to a web browser can be found in the [Chapter 5.1](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookStartingGrid) of the CMS WorkBook. The Grid certificate will be needed in your web browser to access pages sus as RelVal and the Muon POG Validation web page.
 
 
 # Muon Validation documentation
