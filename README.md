@@ -72,7 +72,7 @@ CMSSW release schedule.
 
 # How to produce the muon validation plots
 
-As usual, first login to lxplus and go to your CMSSW releases area.
+First of all, open the [2023 Muon Validation spreadsheet](https://docs.google.com/spreadsheets/d/1JrD1fEHujlLBdoDZtHuaWeM2SX5UTlgUMU9hTUxBjeY/edit#gid=104726132) and write down your name in the validation that you will perform. Then login to lxplus and go to your CMSSW releases area.
 
     ssh -Y piedra@lxplus.cern.ch -o ServerAliveInterval=240
     bash -l
