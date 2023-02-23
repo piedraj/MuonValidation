@@ -55,10 +55,6 @@ Validation database.
 
     https://cms-pdmv.cern.ch/valdb/
 
-Old (2013) validation description.
-
-    https://twiki.cern.ch/twiki/bin/view/CMS/RecoMuonValidationSuite
-
 Automatic RelMon validations.
 
     https://cms-pdmv.cern.ch/relmon/
