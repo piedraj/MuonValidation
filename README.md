@@ -59,6 +59,10 @@ Automatic RelMon validations.
 
     https://cms-pdmv.cern.ch/relmon/
 
+Offline Muon DQM plot description (2016).
+
+    https://twiki.cern.ch/twiki/bin/view/CMS/MuonsDQMPlots
+
 Code.
 
     https://github.com/cms-sw/cmssw/tree/master/Validation/RecoMuon
