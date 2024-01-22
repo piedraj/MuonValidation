@@ -140,22 +140,22 @@ And you are ready to validate!
 
 **2020/03/12, Muon validation changes from CMSSW_11_1_0_pre2.** The following distributions were introduced in the Muon validation from the CMSSW_11_1_0_pre2 release:
 
-   displacedGlobalMuons
-   displacedStandAloneMuons
-   displacedTrks
-   pfMuonTrks
-   recoMuonTrks
-   tunepMuonTrks
+    displacedGlobalMuons
+    displacedStandAloneMuons
+    displacedTrks
+    pfMuonTrks
+    recoMuonTrks
+    tunepMuonTrks
 
 In a similar fashion, the following distributions were removed from the Muon validation from the CMSSW_11_1_0_pre2 release:
 
-   probeTrks_MABH_vs_TABH  
-   DQMData           
-   PDF                
-   RecoMuonV             
-   seedsOfSTAMuons
-   standAloneMuons
-   probeTrks_TkAsso
+    probeTrks_MABH_vs_TABH  
+    DQMData           
+    PDF                
+    RecoMuonV             
+    seedsOfSTAMuons
+    standAloneMuons
+    probeTrks_TkAsso
 
 **2019/12/20, CMS geometries.** This [README](https://github.com/cms-sw/cmssw/blob/master/Configuration/Geometry/README.md) contains short descriptions of the different CMS Run 3 and Phase2 geometries.
 
