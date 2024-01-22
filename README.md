@@ -107,6 +107,9 @@ For example.
    * **Tracking** -> innerTrack -> GeneralProperties folder
 
 
+<details>
+  <summary>Old material</summary>
+
 # How to use DQM RelVal
 
 To make more exhaustive validation studies it is recommended to use DQM RelVal, following the steps below.
@@ -131,10 +134,7 @@ To make more exhaustive validation studies it is recommended to use DQM RelVal, 
 
 And you are ready to validate!
 
-
-<details>
-  <summary>Old material</summary>
-
+  
   # Known issues or features
 
   **2020/03/12, Muon validation changes from CMSSW_11_1_0_pre2.** The following distributions were introduced in the Muon validation from the CMSSW_11_1_0_pre2 release:
