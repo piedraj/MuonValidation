@@ -158,3 +158,21 @@ To make more exhaustive validation studies it is recommended to use DQM RelVal, 
 10. Click on **Muons**.
 
 And you are ready to validate!
+
+
+# Data validation
+
+1. Go to **ValDB** and click on one of the Data Campaigns, such as 13_3_0_Data.
+2. Once inside the Data Campaign, click on the **Relmon** link.
+3. Click on **DataReport** within the different RelMon Subcategories.
+4. Once inside the **RelMon** DataReport you'll have to scroll down to the Summary Table (pie chart collection) and look for the columns that correspond to muon only datasets. In the 13_3_0_Data validation there are three RelVals:
+   * Muon_133X_dataRun3_v3_Data_2022_RelVal_2022D_357735
+   * SingleMuon_133X_dataRun3_v3_Data_2022_RelVal_2022B_355769
+   * SingleMuon_133X_dataRun3_v3_Data_2022_RelVal_2022C_356381
+5. For each RelVal go the row that corresponds to the **Muons** pie chart and click on it.
+6. Next you will have to click on the **To the DQM gui...** link.
+7. Once you are in the CMS DQM GUI, click first on the CMS icon on the top left corner. You will have to choose for the Reference histograms that the **Position** is Overlay+ratio
+8. You are all set to validate, at least, the following **Muons** distributions:
+   * **MuonRecoAnalyzer** folder
+   * **Isolation** folder
+   * **Tracking** -> innerTrack -> GeneralProperties folder
