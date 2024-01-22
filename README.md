@@ -2,10 +2,10 @@
 
 Subscribe to the following CMS Talk forums and e-groups.
 
-    [ALCADB](https://cms-talk.web.cern.ch/c/ppd/alca/108)
-    [Muon Objects Validation](https://cms-talk.web.cern.ch/c/muons/muon-object-validation/175)
-    [PDMV](https://cms-talk.web.cern.ch/c/ppd/pdmv/107)
-    [RelVal Samples and Release Testing](https://cms-talk.web.cern.ch/c/ppd/pdmv/relval/111)
+* [ALCADB](https://cms-talk.web.cern.ch/c/ppd/alca/108)
+* [Muon Objects Validation](https://cms-talk.web.cern.ch/c/muons/muon-object-validation/175)
+* [PDMV](https://cms-talk.web.cern.ch/c/ppd/pdmv/107)
+* [RelVal Samples and Release Testing](https://cms-talk.web.cern.ch/c/ppd/pdmv/relval/111)
     cms-PPD-PdmV-MCval@cern.ch
     cms-PPD-PdmV-DATAval@cern.ch
 
