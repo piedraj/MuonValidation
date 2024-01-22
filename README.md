@@ -1,41 +1,15 @@
-# Known issues or features
-
-**2020/03/12, Muon validation changes from CMSSW_11_1_0_pre2.** The following distributions were introduced in the Muon validation from the CMSSW_11_1_0_pre2 release:
-
-    displacedGlobalMuons
-    displacedStandAloneMuons
-    displacedTrks
-    pfMuonTrks
-    recoMuonTrks
-    tunepMuonTrks
-
-In a similar fashion, the following distributions were removed from the Muon validation from the CMSSW_11_1_0_pre2 release:
-
-    probeTrks_MABH_vs_TABH  
-    DQMData           
-    PDF                
-    RecoMuonV             
-    seedsOfSTAMuons
-    standAloneMuons
-    probeTrks_TkAsso
-
-**2019/12/20, CMS geometries.** This [README](https://github.com/cms-sw/cmssw/blob/master/Configuration/Geometry/README.md) contains short descriptions of the different CMS Run 3 and Phase2 geometries.
-
-**2018/02/26, FullSim.** The MuonAssociatorByHits (MABH) is used for all the plots made by the MuonTrackValidator and by the RecoMuonValidator. Giovanni Abbiendi introduced a comparison with the associator used by the TrackingPOG (TABH) (which can run *only* on inner tracks) to keep under control the comparison of results obtained with our code and theirs (on inner tracks with pt > 4 GeV). This serves to avoid that low level changes in the tracking simulation/validation could go unnoticed by us. Only large discrepancies between them should be alarming, not the small differences that we see on the fake rates (while on the efficiencies they are in perfect agreement).
-
-**2018/02/22, FastSim.** The fake rates cannot be compared with and without pmx. There aren't tracking particles with pmx, and this implies a much higher fake rate. On the other hand, the efficiencies can be compared.
-
-
 # Do not go anywhere without this
 
-Subscribe to the following CMS HyperNews forums and e-groups.
+Subscribe to the following CMS Talk forums and e-groups.
 
-    hn-cms-alca@cern.ch
-    hn-cms-muon-object-validation@cern.ch
-    hn-cms-physics-validation@cern.ch
-    hn-cms-relval@cern.ch
-    cms-PPD-PdmV-val-admin-pdmv@cern.ch
-    
+    [ALCADB](https://cms-talk.web.cern.ch/c/ppd/alca/108)
+    [Muon Objects Validation](https://cms-talk.web.cern.ch/c/muons/muon-object-validation/175)
+    [PDMV](https://cms-talk.web.cern.ch/c/ppd/pdmv/107)
+    [RelVal Samples and Release Testing](https://cms-talk.web.cern.ch/c/ppd/pdmv/relval/111)
+    cms-PPD-PdmV-MCval@cern.ch
+    cms-PPD-PdmV-DATAval@cern.ch
+
+  
 # Never travel without a Grid certificate
 
 To connect to the CMS VOMS server you need to setup a Grid certificate at your lxplus `/home/.globus` area. All the necessary information to get a new Grid User certificate, copy it to lxplus and import it to a web browser, can be found in the [Chapter 5.1](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookStartingGrid) of the CMS WorkBook. The Grid certificate will be needed in your web browser to access pages such as RelVal and the Muon POG Validation web page.
@@ -176,3 +150,31 @@ And you are ready to validate!
    * **MuonRecoAnalyzer** folder
    * **Isolation** folder
    * **Tracking** -> innerTrack -> GeneralProperties folder
+
+
+# Known issues or features
+
+**2020/03/12, Muon validation changes from CMSSW_11_1_0_pre2.** The following distributions were introduced in the Muon validation from the CMSSW_11_1_0_pre2 release:
+
+    displacedGlobalMuons
+    displacedStandAloneMuons
+    displacedTrks
+    pfMuonTrks
+    recoMuonTrks
+    tunepMuonTrks
+
+In a similar fashion, the following distributions were removed from the Muon validation from the CMSSW_11_1_0_pre2 release:
+
+    probeTrks_MABH_vs_TABH  
+    DQMData           
+    PDF                
+    RecoMuonV             
+    seedsOfSTAMuons
+    standAloneMuons
+    probeTrks_TkAsso
+
+**2019/12/20, CMS geometries.** This [README](https://github.com/cms-sw/cmssw/blob/master/Configuration/Geometry/README.md) contains short descriptions of the different CMS Run 3 and Phase2 geometries.
+
+**2018/02/26, FullSim.** The MuonAssociatorByHits (MABH) is used for all the plots made by the MuonTrackValidator and by the RecoMuonValidator. Giovanni Abbiendi introduced a comparison with the associator used by the TrackingPOG (TABH) (which can run *only* on inner tracks) to keep under control the comparison of results obtained with our code and theirs (on inner tracks with pt > 4 GeV). This serves to avoid that low level changes in the tracking simulation/validation could go unnoticed by us. Only large discrepancies between them should be alarming, not the small differences that we see on the fake rates (while on the efficiencies they are in perfect agreement).
+
+**2018/02/22, FastSim.** The fake rates cannot be compared with and without pmx. There aren't tracking particles with pmx, and this implies a much higher fake rate. On the other hand, the efficiencies can be compared.
