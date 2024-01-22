@@ -20,16 +20,13 @@ To connect to the CMS VOMS server you need to setup a Grid certificate at your l
 * [ValDB](https://cms-pdmv.cern.ch/valdb/)
 * [RelMon](https://cms-pdmv.cern.ch/relmon/)
 * [Release validation ROOT files](https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/)
-* [CMSSW release schedule](https://twiki.cern.ch/twiki/bin/view/CMS/ReleaseSchedule) `(Last revision 2023-11-06)`
-* [PdmV release validation general instructions for validators](https://twiki.cern.ch/twiki/bin/viewauth/CMS/PdmVRelValValidatorInstruction) `(Last revision 2023-09-25)`
-* [Offline Muon DQM plot description](https://twiki.cern.ch/twiki/bin/view/CMS/MuonsDQMPlots) `(Last revision 2016-05-23)`
+* [CMSSW release schedule](https://twiki.cern.ch/twiki/bin/view/CMS/ReleaseSchedule) TWiki
+* [PdmV release validation general instructions for validators](https://twiki.cern.ch/twiki/bin/viewauth/CMS/PdmVRelValValidatorInstruction) TWiki
+* [Offline Muon DQM plot description](https://twiki.cern.ch/twiki/bin/view/CMS/MuonsDQMPlots) TWiki
+* [GitHub Validation/RecoMuon code](https://github.com/cms-sw/cmssw/tree/master/Validation/RecoMuon)
+* [GitHub Validation/MuonIdentification code](https://github.com/cms-sw/cmssw/tree/master/Validation/MuonIdentification) 
+* [GitHub Validation/MuonIsolation code](https://github.com/cms-sw/cmssw/tree/master/Validation/MuonIsolation)
 
-Validation code.
-
-    https://github.com/cms-sw/cmssw/tree/master/Validation/RecoMuon
-    https://github.com/cms-sw/cmssw/tree/master/Validation/MuonIsolation
-    https://github.com/cms-sw/cmssw/tree/master/Validation/MuonIdentification
-    
 
 # How to produce the muon validation plots
 
