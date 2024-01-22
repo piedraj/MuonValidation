@@ -1,4 +1,4 @@
-# Do not go anywhere without this
+# Stay tuned
 
 Subscribe to the following CMS Talk categories and CERN e-groups.
 
