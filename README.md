@@ -1,6 +1,6 @@
 # Do not go anywhere without this
 
-Subscribe to the following CMS Talk forums and e-groups.
+Subscribe to the following CMS Talk categories and CERN e-groups.
 
 * [ALCADB](https://cms-talk.web.cern.ch/c/ppd/alca/108)
 * [Muon Objects Validation](https://cms-talk.web.cern.ch/c/muons/muon-object-validation/175)
