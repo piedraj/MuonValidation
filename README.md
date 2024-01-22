@@ -17,9 +17,7 @@ To connect to the CMS VOMS server you need to setup a Grid certificate at your l
 
 # Muon Validation documentation
 
-PdmV release validation general instructions for validators.
-
-    https://twiki.cern.ch/twiki/bin/viewauth/CMS/PdmVRelValValidatorInstruction
+[PdmV release validation general instructions for validators](https://twiki.cern.ch/twiki/bin/viewauth/CMS/PdmVRelValValidatorInstruction) (Last revision 2023-09-25)
 
 Here you can find all the ROOT files centrally produced for validation.
 
@@ -43,9 +41,7 @@ Code.
     https://github.com/cms-sw/cmssw/tree/master/Validation/MuonIsolation
     https://github.com/cms-sw/cmssw/tree/master/Validation/MuonIdentification
     
-CMSSW release schedule.
-
-    https://twiki.cern.ch/twiki/bin/view/CMS/ReleaseSchedule
+[CMSSW release schedule](https://twiki.cern.ch/twiki/bin/view/CMS/ReleaseSchedule) (Last revision 2023-11-06)
 
 
 # How to produce the muon validation plots
