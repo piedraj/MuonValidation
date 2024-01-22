@@ -27,9 +27,7 @@ Here you can find all the ROOT files centrally produced for validation.
 
 
 
-Offline Muon DQM plot description (2016).
-
-    https://twiki.cern.ch/twiki/bin/view/CMS/MuonsDQMPlots
+[Offline Muon DQM plot description](https://twiki.cern.ch/twiki/bin/view/CMS/MuonsDQMPlots) (Last revision 2016-05-23)
 
 Code.
 
