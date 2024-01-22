@@ -108,7 +108,7 @@ For example.
 
 
 <details>
-  <summary><b>Deprecated</b></summary>
+  <summary><h2>Deprecated</h2></summary>
 
 # How to use DQM RelVal
 
