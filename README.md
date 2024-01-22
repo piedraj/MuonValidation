@@ -17,15 +17,13 @@ To connect to the CMS VOMS server you need to setup a Grid certificate at your l
 
 # Muon Validation documentation
 
-[PdmV release validation general instructions for validators](https://twiki.cern.ch/twiki/bin/viewauth/CMS/PdmVRelValValidatorInstruction) (Last revision 2023-09-25)
+* [ValDB](https://cms-pdmv.cern.ch/valdb/)
+* [PdmV release validation general instructions for validators](https://twiki.cern.ch/twiki/bin/viewauth/CMS/PdmVRelValValidatorInstruction) (Last revision 2023-09-25)
 
 Here you can find all the ROOT files centrally produced for validation.
 
     https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/
 
-Validation database.
-
-    https://cms-pdmv.cern.ch/valdb/
 
 Automatic RelMon validations.
 
