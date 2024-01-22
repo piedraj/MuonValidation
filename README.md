@@ -19,24 +19,20 @@ To connect to the CMS VOMS server you need to setup a Grid certificate at your l
 
 * [ValDB](https://cms-pdmv.cern.ch/valdb/)
 * [RelMon](https://cms-pdmv.cern.ch/relmon/)
-* [PdmV release validation general instructions for validators](https://twiki.cern.ch/twiki/bin/viewauth/CMS/PdmVRelValValidatorInstruction) (Last revision 2023-09-25)
+* [CMSSW release schedule](https://twiki.cern.ch/twiki/bin/view/CMS/ReleaseSchedule) `(Last revision 2023-11-06)`
+* [PdmV release validation general instructions for validators](https://twiki.cern.ch/twiki/bin/viewauth/CMS/PdmVRelValValidatorInstruction) `(Last revision 2023-09-25)`
+* [Offline Muon DQM plot description](https://twiki.cern.ch/twiki/bin/view/CMS/MuonsDQMPlots) `(Last revision 2016-05-23)`
 
 Here you can find all the ROOT files centrally produced for validation.
 
     https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/
 
-
-
-[Offline Muon DQM plot description](https://twiki.cern.ch/twiki/bin/view/CMS/MuonsDQMPlots) (Last revision 2016-05-23)
-
-Code.
+Validation code.
 
     https://github.com/cms-sw/cmssw/tree/master/Validation/RecoMuon
     https://github.com/cms-sw/cmssw/tree/master/Validation/MuonIsolation
     https://github.com/cms-sw/cmssw/tree/master/Validation/MuonIdentification
     
-[CMSSW release schedule](https://twiki.cern.ch/twiki/bin/view/CMS/ReleaseSchedule) (Last revision 2023-11-06)
-
 
 # How to produce the muon validation plots
 
