@@ -7,7 +7,7 @@ Subscribe to the following CMS Talk forums and e-groups.
 * [PDMV](https://cms-talk.web.cern.ch/c/ppd/pdmv/107)
 * [RelVal Samples and Release Testing](https://cms-talk.web.cern.ch/c/ppd/pdmv/relval/111)
 * [cms-PPD-PdmV-MCval](https://e-groups.cern.ch/e-groups/Egroup.do?egroupName=cms-PPD-PdmV-MCval)
-* [cms-PPD-PdmV-DATAval@cern.ch](https://e-groups.cern.ch/e-groups/Egroup.do?egroupName=cms-PPD-PdmV-DATAval)
+* [cms-PPD-PdmV-DATAval](https://e-groups.cern.ch/e-groups/Egroup.do?egroupName=cms-PPD-PdmV-DATAval)
 
   
 # Never travel without a Grid certificate
