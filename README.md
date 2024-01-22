@@ -1,11 +1,14 @@
 # Stay tuned
 
-Subscribe to the following CMS Talk categories and CERN e-groups.
+Subscribe to the following CMS Talk categories.
 
 * [ALCADB](https://cms-talk.web.cern.ch/c/ppd/alca/108)
 * [Muon Objects Validation](https://cms-talk.web.cern.ch/c/muons/muon-object-validation/175)
 * [PDMV](https://cms-talk.web.cern.ch/c/ppd/pdmv/107)
 * [RelVal Samples and Release Testing](https://cms-talk.web.cern.ch/c/ppd/pdmv/relval/111)
+
+Subscribe to these CERN e-groups.
+
 * [cms-PPD-PdmV-MCval](https://e-groups.cern.ch/e-groups/Egroup.do?egroupName=cms-PPD-PdmV-MCval)
 * [cms-PPD-PdmV-DATAval](https://e-groups.cern.ch/e-groups/Egroup.do?egroupName=cms-PPD-PdmV-DATAval)
 
