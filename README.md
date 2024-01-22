@@ -107,7 +107,6 @@ For example.
    * **Tracking** -> innerTrack -> GeneralProperties folder
 
 
-***
 <details>
   <summary><b>Deprecated</b></summary>
 
