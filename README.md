@@ -30,7 +30,7 @@ To connect to the CMS VOMS server you need to setup a Grid certificate at your l
 
 # How to produce the muon validation plots
 
-First of all, open the [2023 Muon Validation spreadsheet](https://docs.google.com/spreadsheets/d/1JrD1fEHujlLBdoDZtHuaWeM2SX5UTlgUMU9hTUxBjeY/edit#gid=104726132) and write down your name in the validation that you will perform. Then login to lxplus and go to your CMSSW releases area.
+First of all, open the [2024 Muon Validation spreadsheet](https://docs.google.com/spreadsheets/d/1JrD1fEHujlLBdoDZtHuaWeM2SX5UTlgUMU9hTUxBjeY/edit#gid=829147341) and write down your name in the validation that you will perform. Then login to lxplus and go to your CMSSW releases area.
 
     ssh -Y piedra@lxplus.cern.ch -o ServerAliveInterval=240
     bash -l
@@ -54,7 +54,7 @@ Get the muon validation package and compile it.
     scram b -j 8
     cd Validation/RecoMuon/test
 
-Open `new_userparams.py` and replace `User='cprieels'` by `User='piedra'`. Now click on the little green pie at the crossing of the **Muons** row and the **RelValTTbar_13** column in the [RelMon](https://cms-pdmv.cern.ch/relmon/) pie matrix. There you will find the precise names of the target and reference CMSSW releases. Use these release names in the [RelVal repository](https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/) to find the target and reference files, for example for **RelValTTbar_13**. At this point you have all the needed information to complete the `new_userparams.py` validation configuration. Do not forget to follow the syntax below.
+Open `new_userparams.py` and replace `cprieels` by your `$USER` name. Now click on the little green pie at the crossing of the **Muons** row and the **RelValTTbar_14** column in the [RelMon](https://cms-pdmv.cern.ch/relmon/) pie matrix. There you will find the precise names of the target and reference CMSSW releases. Use these release names in the [RelVal repository](https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/) to find the target and reference files, for example for **RelValTTbar_14**. At this point you have all the needed information to complete the `new_userparams.py` validation configuration. Do not forget to follow the syntax below.
 
     DQM_V0001_R000000001__RelValTTbar_13__CMSSW_9_4_4-PU25ns_94X_mc2017_realistic_v10For2017G_v2-v1__DQMIO.root
     DQM_V0001_R000000001__{samples}__{Release}-PU{PileUp}_{Condition}-{Version}__{Format}.root
