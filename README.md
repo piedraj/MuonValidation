@@ -35,7 +35,7 @@ To connect to the CMS VOMS server you need to setup a Grid certificate at your l
 
 First of all, open the [2024 Muon Validation spreadsheet](https://docs.google.com/spreadsheets/d/1JrD1fEHujlLBdoDZtHuaWeM2SX5UTlgUMU9hTUxBjeY/edit#gid=829147341) and write down your name in the validation that you will perform. Then login to lxplus and go to your CMSSW releases area.
 
-    ssh -Y <your lxplus user name>@lxplus.cern.ch -o ServerAliveInterval=240
+    ssh -Y <your lxplus username>@lxplus.cern.ch -o ServerAliveInterval=240
     bash -l
     cd work/CMSSW_projects/
 
