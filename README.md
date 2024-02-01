@@ -12,8 +12,8 @@ Subscribe to the following CMS Talk categories and CERN e-groups.
 
 # Access rights
 
-* Ask the L2 Muon POG conveners to be included in the cms-muon-pog-people e-group, so you can access `/eos/user/c/cmsmupog`.
-* Ask the [PdmV conveners](cms-PPD-conveners-PdmV@cern.ch) for Muon data and MC write access in [ValDB](https://cms-pdmv.cern.ch/valdb/).
+* Ask the [Muon POG conveners](cms-muon-pog@cern.ch) to be included in the **cms-muon-pog-people** e-group, so you can access `/eos/user/c/cmsmupog`.
+* Ask the [PdmV conveners](cms-PPD-conveners-PdmV@cern.ch) for **Muon data and MC** write access in [ValDB](https://cms-pdmv.cern.ch/valdb/).
 
 
 # Never travel without a Grid certificate
