@@ -9,7 +9,13 @@ Subscribe to the following CMS Talk categories and CERN e-groups.
 * [cms-PPD-PdmV-MCval](https://e-groups.cern.ch/e-groups/Egroup.do?egroupName=cms-PPD-PdmV-MCval)
 * [cms-PPD-PdmV-DATAval](https://e-groups.cern.ch/e-groups/Egroup.do?egroupName=cms-PPD-PdmV-DATAval)
 
-  
+
+# Access rights
+
+* Ask the L2 Muon POG conveners to be included in the cms-muon-pog-people e-group, so you can access `/eos/user/c/cmsmupog`.
+* Ask the [PdmV conveners](cms-PPD-conveners-PdmV@cern.ch) for Muon data and MC write access in [ValDB](https://cms-pdmv.cern.ch/valdb/).
+
+
 # Never travel without a Grid certificate
 
 To connect to the CMS VOMS server you need to setup a Grid certificate at your lxplus `/home/.globus` area. All the necessary information to get a new Grid User certificate, copy it to lxplus and import it to a web browser, can be found in the [Chapter 5.1](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookStartingGrid) of the CMS WorkBook. The Grid certificate will be needed in your web browser to access pages such as RelVal and the Muon POG Validation web page.
@@ -17,9 +23,6 @@ To connect to the CMS VOMS server you need to setup a Grid certificate at your l
 
 # Muon Validation documentation
 
-* [ValDB](https://cms-pdmv.cern.ch/valdb/)
-* [RelMon](https://cms-pdmv.cern.ch/relmon/)
-* [Release validation ROOT files](https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/)
 * [CMSSW release schedule](https://twiki.cern.ch/twiki/bin/view/CMS/ReleaseSchedule) TWiki
 * [PdmV release validation general instructions for validators](https://twiki.cern.ch/twiki/bin/viewauth/CMS/PdmVRelValValidatorInstruction) TWiki
 * [Offline Muon DQM plot description](https://twiki.cern.ch/twiki/bin/view/CMS/MuonsDQMPlots) TWiki
@@ -53,8 +56,6 @@ Get the muon validation package and compile it.
     git cms-addpkg Validation/RecoMuon
     scram b -j 8
     cd Validation/RecoMuon/test
-
-Ask the L2 muon POG conveners for **read+write access** to `/eos/user/c/cmsmupog`.
 
 Open `new_userparams.py` and replace `cprieels` by your `$USER` name.
 
