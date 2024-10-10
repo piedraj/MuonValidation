@@ -111,7 +111,7 @@ For example.
    * **Isolation** folder
    * **Tracking** -> innerTrack -> GeneralProperties folder
 
-
+<!---
 <details>
   <summary><h1>Deprecated</h1></summary>
 
@@ -168,3 +168,4 @@ In a similar fashion, the following distributions were removed from the Muon val
 **2018/02/22, FastSim.** The fake rates cannot be compared with and without pmx. There aren't tracking particles with pmx, and this implies a much higher fake rate. On the other hand, the efficiencies can be compared.
  
 </details>
+-->
