@@ -30,10 +30,13 @@ To connect to the CMS VOMS server you need to setup a Grid certificate at your l
 * [GitHub Validation/MuonIdentification code](https://github.com/cms-sw/cmssw/tree/master/Validation/MuonIdentification) 
 * [GitHub Validation/MuonIsolation code](https://github.com/cms-sw/cmssw/tree/master/Validation/MuonIsolation)
 
+# Muon Validation IFCA spreadsheet
 
-# How to produce the muon validation plots
+Before proceeding with a validation, open the [Muon Validation spreadsheet](https://docs.google.com/spreadsheets/d/1JrD1fEHujlLBdoDZtHuaWeM2SX5UTlgUMU9hTUxBjeY/edit#gid=829147341) and write down your name, together with the validation that you will perform.
 
-First of all, open the [2024 Muon Validation spreadsheet](https://docs.google.com/spreadsheets/d/1JrD1fEHujlLBdoDZtHuaWeM2SX5UTlgUMU9hTUxBjeY/edit#gid=829147341) and write down your name in the validation that you will perform. Then login to lxplus and go to your CMSSW releases area.
+# How to produce the muon validation plots (classic way)
+
+Login to lxplus and go to your CMSSW releases area.
 
     ssh -Y <your lxplus username>@lxplus.cern.ch -o ServerAliveInterval=240
     bash -l
@@ -82,7 +85,7 @@ Once the validations are done you should copy (or move) them to the muon validat
 Now you are left with checking the produced histograms, which will be available at the [Muon POG Validation web page](https://cms-muonpog.web.cern.ch/cms-muonpog/Validation/).
 
 
-# MC validation
+# MC validation (current way)
 
 0. Go to [ValDB](https://cms-pdmv.cern.ch/valdb/) and click on one of the MC Campaigns, such as 14_2_0_pre1_2024.
 1. Once inside the MC Campaign, click on the **Relmon** link.
