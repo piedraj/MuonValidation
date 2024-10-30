@@ -87,10 +87,10 @@ Now you are left with checking the produced histograms, which will be available 
 0. Go to [ValDB](https://cms-pdmv.cern.ch/valdb/) and click on one of the MC Campaigns, such as 14_2_0_pre1_2024.
 1. Once inside the MC Campaign, click on the **Relmon** link.
 2. Click on **FullSimReport** (and the same for **FullSimReport_PU**) within the different RelMon Subcategories.
-3. Once inside the **RelMon** FullSimReport (or FullSimReport_PU) you'll have to scroll down to the Summary Table (pie chart collection) and look for the columns that correspond to the ZMM and TTbar RelVals:
+3. Once inside the **RelMon** FullSimReport (or FullSimReport_PU) you'll have to scroll down to the Summary Table (pie chart collection) and look for the columns that correspond to the TTbar and ZMM RelVals:
    * RelValTTbar_14TeV
    * RelValZMM_14
-4. For each RelVal go the row that corresponds to the **Muons** pie chart and click on it.
+4. For each RelVal click on the first pie chart of the corresponding column.
 5. Next you will have to click on the **To the DQM GUI...** link.
 6. Once you are in the CMS DQM GUI, click first on the CMS icon on the top left corner. You will have to choose for the Reference histograms that the **Position** is Overlay+ratio
 7. You are all set to validate the distributions in the following **Muons** folders:
@@ -130,7 +130,7 @@ Now you are left with checking the produced histograms, which will be available 
    * Muon_133X_dataRun3_v3_Data_2022_RelVal_2022D_357735
    * SingleMuon_133X_dataRun3_v3_Data_2022_RelVal_2022B_355769
    * SingleMuon_133X_dataRun3_v3_Data_2022_RelVal_2022C_356381
-4. For each RelVal go the row that corresponds to the **Muons** pie chart and click on it.
+4. For each RelVal click on the first pie chart of the corresponding column.
 5. Next you will have to click on the **To the DQM GUI...** link.
 6. Once you are in the CMS DQM GUI, click first on the CMS icon on the top left corner. You will have to choose for the Reference histograms that the **Position** is Overlay+ratio
 7. You are all set to validate, at least, the distributions in the following **Muons** folders:
