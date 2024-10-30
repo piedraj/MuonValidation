@@ -30,59 +30,10 @@ To connect to the CMS VOMS server you need to setup a Grid certificate at your l
 * [GitHub Validation/MuonIdentification code](https://github.com/cms-sw/cmssw/tree/master/Validation/MuonIdentification) 
 * [GitHub Validation/MuonIsolation code](https://github.com/cms-sw/cmssw/tree/master/Validation/MuonIsolation)
 
+
 # IFCA Muon Validation spreadsheet
 
 Before proceeding with a validation, open the [IFCA Muon Validation spreadsheet](https://docs.google.com/spreadsheets/d/1JrD1fEHujlLBdoDZtHuaWeM2SX5UTlgUMU9hTUxBjeY/edit#gid=829147341) and write down your name, together with the validation that you will perform.
-
-# How to produce the muon validation plots (classic way)
-
-Login to lxplus and go to your CMSSW releases area.
-
-    ssh -Y <your lxplus username>@lxplus.cern.ch -o ServerAliveInterval=240
-    bash -l
-    cd work/CMSSW_projects/
-
-Once there you need to setup the CMSSW release.
-
-    cmsrel CMSSW_11_1_0_pre2
-    cd CMSSW_11_1_0_pre2/src/
-    cmsenv
-
-If you have never used Git then you will have to follow the [First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) instructions. The following commands are the bare minimum set-up needed.
-
-    git config --global user.name   "John Doe"
-    git config --global user.email  johndoe@example.com
-    git config --global user.github <your github username>
-
-Get the muon validation package and compile it. 
-
-    git cms-addpkg Validation/RecoMuon
-    scram b -j 8
-    cd Validation/RecoMuon/test
-
-Open `new_userparams.py` and replace `cprieels` by your `$USER` name.
-
-For each release validation go to the **FullSimReport** (and **FullSimReport_PU**) [RelMon](https://cms-pdmv.cern.ch/relmon/) Subcategory, scroll down until you find the pie matrix, and click on the green pie that corresponds to the crossing of the **Muons** row and the **RelValTTbar_14** column. There you will find the precise names of the target and reference CMSSW releases. If needed, use these release names to find the target and reference files in the [RelVal repository](https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/), for example for **RelValTTbar_14**. At this point you have all the needed information to complete the `new_userparams.py` validation configuration. Do not forget to follow the syntax below.
-
-    DQM_V0001_R000000001__RelValTTbar_13__CMSSW_9_4_4-PU25ns_94X_mc2017_realistic_v10For2017G_v2-v1__DQMIO.root
-    DQM_V0001_R000000001__{samples}__{Release}-PU{PileUp}_{Condition}-{Version}__{Format}.root
-
-You should be all set. It is time to run the muon validation.
-    
-    export X509_CERT_DIR=/etc/grid-security/certificates/
-    voms-proxy-init -voms cms
-    export X509_USER_PROXY=$(voms-proxy-info -p)
-    
-    python new_muonReleaseSummary.py
-        
-Once the validations are done you should copy (or move) them to the muon validation eos repository. The example below corresponds to the `CMSSW_10_6_0` release.
-
-    cp -r CMSSW_10_6_0 /eos/user/c/cmsmupog/www/Validation/.
-    cd /eos/user/c/cmsmupog/www/Validation/CMSSW_10_6_0
-    cp ../index.php .
-    find . -type d -exec cp index.php {} \;
-    
-Now you are left with checking the produced histograms, which will be available at the [Muon POG Validation web page](https://cms-muonpog.web.cern.ch/cms-muonpog/Validation/).
 
 
 # MC validation (current way)
@@ -140,6 +91,57 @@ Now you are left with checking the produced histograms, which will be available 
    * MuonRecoAnalyzer
    * Isolation
    * Tracking / innerTrack / GeneralProperties
+
+
+# MC validation (classic way)
+
+Login to lxplus and go to your CMSSW releases area.
+
+    ssh -Y <your lxplus username>@lxplus.cern.ch -o ServerAliveInterval=240
+    bash -l
+    cd work/CMSSW_projects/
+
+Once there you need to setup the CMSSW release.
+
+    cmsrel CMSSW_11_1_0_pre2
+    cd CMSSW_11_1_0_pre2/src/
+    cmsenv
+
+If you have never used Git then you will have to follow the [First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) instructions. The following commands are the bare minimum set-up needed.
+
+    git config --global user.name   "John Doe"
+    git config --global user.email  johndoe@example.com
+    git config --global user.github <your github username>
+
+Get the muon validation package and compile it. 
+
+    git cms-addpkg Validation/RecoMuon
+    scram b -j 8
+    cd Validation/RecoMuon/test
+
+Open `new_userparams.py` and replace `cprieels` by your `$USER` name.
+
+For each release validation go to the **FullSimReport** (and **FullSimReport_PU**) [RelMon](https://cms-pdmv.cern.ch/relmon/) Subcategory, scroll down until you find the pie matrix, and click on the green pie that corresponds to the crossing of the **Muons** row and the **RelValTTbar_14** column. There you will find the precise names of the target and reference CMSSW releases. If needed, use these release names to find the target and reference files in the [RelVal repository](https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/), for example for **RelValTTbar_14**. At this point you have all the needed information to complete the `new_userparams.py` validation configuration. Do not forget to follow the syntax below.
+
+    DQM_V0001_R000000001__RelValTTbar_13__CMSSW_9_4_4-PU25ns_94X_mc2017_realistic_v10For2017G_v2-v1__DQMIO.root
+    DQM_V0001_R000000001__{samples}__{Release}-PU{PileUp}_{Condition}-{Version}__{Format}.root
+
+You should be all set. It is time to run the muon validation.
+    
+    export X509_CERT_DIR=/etc/grid-security/certificates/
+    voms-proxy-init -voms cms
+    export X509_USER_PROXY=$(voms-proxy-info -p)
+    
+    python new_muonReleaseSummary.py
+        
+Once the validations are done you should copy (or move) them to the muon validation eos repository. The example below corresponds to the `CMSSW_10_6_0` release.
+
+    cp -r CMSSW_10_6_0 /eos/user/c/cmsmupog/www/Validation/.
+    cd /eos/user/c/cmsmupog/www/Validation/CMSSW_10_6_0
+    cp ../index.php .
+    find . -type d -exec cp index.php {} \;
+    
+Now you are left with checking the produced histograms, which will be available at the [Muon POG Validation web page](https://cms-muonpog.web.cern.ch/cms-muonpog/Validation/).
 
 
 <!---
