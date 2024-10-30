@@ -30,7 +30,7 @@ To connect to the CMS VOMS server you need to setup a Grid certificate at your l
 * [GitHub Validation/MuonIdentification code](https://github.com/cms-sw/cmssw/tree/master/Validation/MuonIdentification) 
 * [GitHub Validation/MuonIsolation code](https://github.com/cms-sw/cmssw/tree/master/Validation/MuonIsolation)
 
-# Muon Validation IFCA spreadsheet
+# IFCA Muon Validation spreadsheet
 
 Before proceeding with a validation, open the [IFCA Muon Validation spreadsheet](https://docs.google.com/spreadsheets/d/1JrD1fEHujlLBdoDZtHuaWeM2SX5UTlgUMU9hTUxBjeY/edit#gid=829147341) and write down your name, together with the validation that you will perform.
 
