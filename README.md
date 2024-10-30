@@ -110,7 +110,51 @@ For example.
    * **MuonRecoAnalyzer** folder
    * **Isolation** folder
    * **Tracking** -> innerTrack -> GeneralProperties folder
-   * **RecoDisplacedMuonV** folder (MC only)
+
+# MC validation
+
+0. Go to [ValDB](https://cms-pdmv.cern.ch/valdb/) and click on one of the Data Campaigns, such as 13_3_0_Data.
+1. Once inside the Data Campaign, click on the **Relmon** link.
+2. Click on **DataReport** within the different RelMon Subcategories.
+3. Once inside the **RelMon** DataReport you'll have to scroll down to the Summary Table (pie chart collection) and look for the columns that correspond to muon only datasets. In the 13_3_0_Data validation there are three RelVals:
+   * Muon_133X_dataRun3_v3_Data_2022_RelVal_2022D_357735
+   * SingleMuon_133X_dataRun3_v3_Data_2022_RelVal_2022B_355769
+   * SingleMuon_133X_dataRun3_v3_Data_2022_RelVal_2022C_356381
+4. For each RelVal go the row that corresponds to the **Muons** pie chart and click on it.
+5. Next you will have to click on the **To the DQM gui...** link.
+6. Once you are in the CMS DQM GUI, click first on the CMS icon on the top left corner. You will have to choose for the Reference histograms that the **Position** is Overlay+ratio
+7. You are all set to validate, at least, the following **Muons** distributions:
+
+
+   * **MuonIsolationV_inc** folder
+   * **MuonRecoAnalyzer** folder
+   * **MuonSeedsAnalyzer** folder
+   * **RecoDisplacedMuonV** folder
+   * **RecoMuonV** folder
+   * **RecoMuonV / MuonTrack / displacedGlobalMuons** folder
+   * **RecoMuonV / MuonTrack / displacedStandAloneMuons** folder
+   * **RecoMuonV / MuonTrack / displacedTrks** folder
+   * **RecoMuonV / MuonTrack / extractGemMuons** folder
+   * **RecoMuonV / MuonTrack / globalMuons** folder
+   * **RecoMuonV / MuonTrack / pfMuonTrks** folder
+   * **RecoMuonV / MuonTrack / probeTrks** folder
+   * **RecoMuonV / MuonTrack / probeTrks_TkAsso** folder
+   * **RecoMuonV / MuonTrack / recoMuonTrks** folder
+   * **RecoMuonV / MuonTrack / refittedStandAloneMuons** folder
+   * **RecoMuonV / MuonTrack / refittedStandAloneMuons_UpdAtVtx** folder
+   * **RecoMuonV / MuonTrack / seedsOfDisplacedSTAmuons** folder
+   * **RecoMuonV / MuonTrack / seedsOfSTAmuons** folder
+   * **RecoMuonV / MuonTrack / standAloneMuons** folder
+   * **RecoMuonV / MuonTrack / standAloneMuons_UpdAtVtx** folder
+   * **RecoMuonV / MuonTrack / tevMuons_dyt** folder
+   * **RecoMuonV / MuonTrack / tevMuons_firstHit** folder
+   * **RecoMuonV / MuonTrack / tevMuons_picky** folder
+   * **RecoMuonV / MuonTrack / tunepMuonTrks** folder
+
+
+
+
+
 
 <!---
 <details>
