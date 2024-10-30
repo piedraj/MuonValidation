@@ -82,47 +82,18 @@ Once the validations are done you should copy (or move) them to the muon validat
 Now you are left with checking the produced histograms, which will be available at the [Muon POG Validation web page](https://cms-muonpog.web.cern.ch/cms-muonpog/Validation/).
 
 
-# Manual download
-
-To manually download a file you only need to know the URL or web address.
-
-    /usr/bin/curl -k -O -L --capath $X509_CERT_DIR --key $X509_USER_PROXY --cert $X509_USER_PROXY -w "%{http_code}" + url
-    
-For example.
-
-    /usr/bin/curl -k -O -L --capath $X509_CERT_DIR --key $X509_USER_PROXY --cert $X509_USER_PROXY -w "%{http_code}" https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/CMSSW_11_0_x/DQM_V0001_R000000001__RelValZMM_14__CMSSW_11_0_0-PU25ns_110X_mcRun4_realistic_v3_2026D49PU200-v1__DQMIO.root
-    /usr/bin/curl -k -O -L --capath $X509_CERT_DIR --key $X509_USER_PROXY --cert $X509_USER_PROXY -w "%{http_code}" https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/CMSSW_11_1_x/DQM_V0001_R000000001__RelValZMM_14__CMSSW_11_1_1-PU25ns_110X_mcRun4_realistic_v3_2026D49PU200_raw1100-v1__DQMIO.root
-
-
-# Data validation
-
-0. Go to [ValDB](https://cms-pdmv.cern.ch/valdb/) and click on one of the Data Campaigns, such as 13_3_0_Data.
-1. Once inside the Data Campaign, click on the **Relmon** link.
-2. Click on **DataReport** within the different RelMon Subcategories.
-3. Once inside the **RelMon** DataReport you'll have to scroll down to the Summary Table (pie chart collection) and look for the columns that correspond to muon only datasets. In the 13_3_0_Data validation there are three RelVals:
-   * Muon_133X_dataRun3_v3_Data_2022_RelVal_2022D_357735
-   * SingleMuon_133X_dataRun3_v3_Data_2022_RelVal_2022B_355769
-   * SingleMuon_133X_dataRun3_v3_Data_2022_RelVal_2022C_356381
-4. For each RelVal go the row that corresponds to the **Muons** pie chart and click on it.
-5. Next you will have to click on the **To the DQM GUI...** link.
-6. Once you are in the CMS DQM GUI, click first on the CMS icon on the top left corner. You will have to choose for the Reference histograms that the **Position** is Overlay+ratio
-7. You are all set to validate, at least, the following **Muons** distributions:
-   * **MuonRecoAnalyzer** folder
-   * **Isolation** folder
-   * **Tracking** -> innerTrack -> GeneralProperties folder
-
 # MC validation
 
-0. Go to [ValDB](https://cms-pdmv.cern.ch/valdb/) and click on one of the Data Campaigns, such as 14_2_0_pre1_2024.
+0. Go to [ValDB](https://cms-pdmv.cern.ch/valdb/) and click on one of the MC Campaigns, such as 14_2_0_pre1_2024.
 1. Once inside the MC Campaign, click on the **Relmon** link.
 2. Click on **FullSimReport** (and the same for **FullSimReport_PU**) within the different RelMon Subcategories.
-3. Once inside the **RelMon** FullSimReport you'll have to scroll down to the Summary Table (pie chart collection) and look for the columns that correspond to the ZMM and TTbar RelVals:
-   *RelValTTbar_14TeV
+3. Once inside the **RelMon** FullSimReport (or FullSimReport_PU) you'll have to scroll down to the Summary Table (pie chart collection) and look for the columns that correspond to the ZMM and TTbar RelVals:
+   * RelValTTbar_14TeV
    * RelValZMM_14
 4. For each RelVal go the row that corresponds to the **Muons** pie chart and click on it.
 5. Next you will have to click on the **To the DQM GUI...** link.
 6. Once you are in the CMS DQM GUI, click first on the CMS icon on the top left corner. You will have to choose for the Reference histograms that the **Position** is Overlay+ratio
-7. You are all set to validate the distributions that can be found in the following **Muons** folders:
+7. You are all set to validate the distributions in the following **Muons** folders:
 
    * MuonIsolationV_inc
    * MuonRecoAnalyzer
@@ -150,13 +121,39 @@ For example.
    * RecoMuonV / MuonTrack / tunepMuonTrks
 
 
+# Data validation
 
-
+0. Go to [ValDB](https://cms-pdmv.cern.ch/valdb/) and click on one of the Data Campaigns, such as 13_3_0_Data.
+1. Once inside the Data Campaign, click on the **Relmon** link.
+2. Click on **DataReport** within the different RelMon Subcategories.
+3. Once inside the **RelMon** DataReport you'll have to scroll down to the Summary Table (pie chart collection) and look for the columns that correspond to muon only datasets. In the 13_3_0_Data validation there are three RelVals:
+   * Muon_133X_dataRun3_v3_Data_2022_RelVal_2022D_357735
+   * SingleMuon_133X_dataRun3_v3_Data_2022_RelVal_2022B_355769
+   * SingleMuon_133X_dataRun3_v3_Data_2022_RelVal_2022C_356381
+4. For each RelVal go the row that corresponds to the **Muons** pie chart and click on it.
+5. Next you will have to click on the **To the DQM GUI...** link.
+6. Once you are in the CMS DQM GUI, click first on the CMS icon on the top left corner. You will have to choose for the Reference histograms that the **Position** is Overlay+ratio
+7. You are all set to validate, at least, the distributions in the following **Muons** folders:
+   * MuonRecoAnalyzer
+   * Isolation
+   * Tracking / innerTrack / GeneralProperties
 
 
 <!---
 <details>
   <summary><h1>Deprecated</h1></summary>
+
+# Manual download
+
+To manually download a file you only need to know the URL or web address.
+
+    /usr/bin/curl -k -O -L --capath $X509_CERT_DIR --key $X509_USER_PROXY --cert $X509_USER_PROXY -w "%{http_code}" + url
+    
+For example.
+
+    /usr/bin/curl -k -O -L --capath $X509_CERT_DIR --key $X509_USER_PROXY --cert $X509_USER_PROXY -w "%{http_code}" https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/CMSSW_11_0_x/DQM_V0001_R000000001__RelValZMM_14__CMSSW_11_0_0-PU25ns_110X_mcRun4_realistic_v3_2026D49PU200-v1__DQMIO.root
+    /usr/bin/curl -k -O -L --capath $X509_CERT_DIR --key $X509_USER_PROXY --cert $X509_USER_PROXY -w "%{http_code}" https://cmsweb.cern.ch/dqm/relval/data/browse/ROOT/RelVal/CMSSW_11_1_x/DQM_V0001_R000000001__RelValZMM_14__CMSSW_11_1_1-PU25ns_110X_mcRun4_realistic_v3_2026D49PU200_raw1100-v1__DQMIO.root
+
 
 # How to use DQM RelVal
 
