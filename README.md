@@ -36,7 +36,7 @@ To connect to the CMS VOMS server you need to setup a Grid certificate at your l
 Before proceeding with a validation, open the [IFCA Muon Validation spreadsheet](https://docs.google.com/spreadsheets/d/1JrD1fEHujlLBdoDZtHuaWeM2SX5UTlgUMU9hTUxBjeY/edit#gid=829147341) and write down your name, together with the validation that you will perform.
 
 
-# MC validation (current way)
+# MC validation
 
 0. Go to [ValDB](https://cms-pdmv.cern.ch/valdb/) and click on one of the MC Campaigns, such as 14_2_0_pre1_2024.
 1. Once inside the MC Campaign, click on the **Relmon** link.
