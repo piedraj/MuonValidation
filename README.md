@@ -23,6 +23,7 @@ To connect to the CMS VOMS server you need to setup a Grid certificate at your l
 
 # Muon Validation documentation
 
+* [CMS Muon POG Wiki](https://muon-wiki.docs.cern.ch/)
 * [CMSSW release schedule](https://twiki.cern.ch/twiki/bin/view/CMS/ReleaseSchedule) TWiki
 * [PdmV release validation general instructions for validators](https://twiki.cern.ch/twiki/bin/viewauth/CMS/PdmVRelValValidatorInstruction) TWiki
 * [Offline Muon DQM plot description](https://twiki.cern.ch/twiki/bin/view/CMS/MuonsDQMPlots) TWiki
