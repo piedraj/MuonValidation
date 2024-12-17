@@ -2,6 +2,8 @@
 
 Subscribe to the following CMS Talk categories, CERN e-groups and Mattermost channels.
 
+| Topic                                                                                               | Medium             |
+|:----------------------------------------------------------------------------------------------------|:-------------------|
 | [ALCADB](https://cms-talk.web.cern.ch/c/ppd/alca/108)                                               | CMS Talk category  |
 | [Muon Objects Validation](https://cms-talk.web.cern.ch/c/muons/muon-object-validation/175)          | CMS Talk category  |
 | [PDMV](https://cms-talk.web.cern.ch/c/ppd/pdmv/107)                                                 | CMS Talk category  |
