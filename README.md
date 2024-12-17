@@ -4,7 +4,7 @@ Subscribe to the following CMS Talk categories, CERN e-groups and Mattermost cha
 
 | Topic                                                                                               | Medium             |
 |:----------------------------------------------------------------------------------------------------|:-------------------|
-| [Muon Objects Validation](https://cms-talk.web.cern.ch/c/muons/muon-object-validation/175)          | CMS Talk category  |
+| Muon Detector > [Muon Objects Validation](https://cms-talk.web.cern.ch/c/muons/muon-object-validation/175)          | CMS Talk category  |
 | [PDMV](https://cms-talk.web.cern.ch/c/ppd/pdmv/107)                                                 | CMS Talk category  |
 | [Validations](https://cms-talk.web.cern.ch/c/ppd/pdmv/relval/111)                                   | CMS Talk category  |
 | [cms-PPD-PdmV-DATAval](https://e-groups.cern.ch/e-groups/Egroup.do?egroupName=cms-PPD-PdmV-DATAval) | CERN e-group       |
