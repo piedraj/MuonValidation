@@ -4,13 +4,16 @@ Subscribe to the following CMS Talk categories, CERN e-groups and Mattermost cha
 
 | Topic                                                                                               | Medium             |
 |:----------------------------------------------------------------------------------------------------|:-------------------|
-| [ALCADB](https://cms-talk.web.cern.ch/c/ppd/alca/108)                                               | CMS Talk category  |
 | [Muon Objects Validation](https://cms-talk.web.cern.ch/c/muons/muon-object-validation/175)          | CMS Talk category  |
 | [PDMV](https://cms-talk.web.cern.ch/c/ppd/pdmv/107)                                                 | CMS Talk category  |
 | [RelVal Samples and Release Testing](https://cms-talk.web.cern.ch/c/ppd/pdmv/relval/111)            | CMS Talk category  |
 | [cms-PPD-PdmV-DATAval](https://e-groups.cern.ch/e-groups/Egroup.do?egroupName=cms-PPD-PdmV-DATAval) | CERN e-group       |
 | [cms-PPD-PdmV-MCval](https://e-groups.cern.ch/e-groups/Egroup.do?egroupName=cms-PPD-PdmV-MCval)     | CERN e-group       |
 | [PPD Validations](https://mattermost.web.cern.ch/cms-ppd/channels/ppd-validations)                  | Mattermost channel |
+
+<!---
+| [ALCADB](https://cms-talk.web.cern.ch/c/ppd/alca/108)                                               | CMS Talk category  |
+-->
 
 # Access rights
 
