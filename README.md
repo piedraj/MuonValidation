@@ -87,9 +87,9 @@ Before proceeding with a validation, open the [IFCA Muon Validation spreadsheet]
 1. Once inside the Data Campaign, click on the **Relmon** link.
 2. Click on **DataReport** within the different RelMon Subcategories.
 3. Once inside the **RelMon** DataReport you'll have to scroll down to the Summary Table (pie chart collection) and look for the columns that correspond to muon only datasets. In the 13_3_0_Data validation there are three RelVals:
-   * Muon_133X_dataRun3_v3_Data_2022_RelVal_2022D_357735
-   * SingleMuon_133X_dataRun3_v3_Data_2022_RelVal_2022B_355769
-   * SingleMuon_133X_dataRun3_v3_Data_2022_RelVal_2022C_356381
+   * Muon_2022D
+   * SingleMuon_2022B
+   * SingleMuon_2022C
 4. For each RelVal click on the first pie chart of the corresponding column.
 5. Next you will have to click on the **To the DQM GUI...** link.
 6. Once you are in the CMS DQM GUI, click first on the CMS icon on the top left corner. You will have to choose for the Reference histograms that the **Position** is Overlay+ratio
